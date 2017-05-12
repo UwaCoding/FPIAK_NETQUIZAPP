@@ -106,7 +106,7 @@ public class QuestionActivity extends Activity {
             // if unlucky start activity and finish the game
 
             Intent intent = new Intent(QuestionActivity.this,
-                    ResultActivity.class);
+                    Result.class);
 
             // passing the int value
             Bundle b = new Bundle();
@@ -124,7 +124,7 @@ public class QuestionActivity extends Activity {
 
             // if over do this
             Intent intent = new Intent(QuestionActivity.this,
-                    ResultActivity.class);
+                    Result.class);
             Bundle b = new Bundle();
             b.putInt("score", score); // Your score
             intent.putExtras(b); // Put your score to your next
